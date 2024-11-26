@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mental Health Tracker</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/reset.css">
+</head>
+
+<body>
+    <a href = "#main">Skip to Main Content</a>
+    <div class="banner">
+      <nav>
+        <ul>
+          <li class="nav-logo">
+            <img src="img/logo.png" alt="Mental Health Tracker logo">
+          </li>
+          <li>
+            <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+          </li>
+          <li class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="journal.html">Journal</a>
+            <a href="goals.html">Goal Setting</a>
+            <a href="resources.html">Useful Resources</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+  <header>
+
+    <div class="text">
+      
+        <p id="greeting">
+              "</p>
+
+        <h1>Welcome to Your Mental Health Tracker</h1>
+        <p>Track your mental health, explore resources, and find peace of mind.</p>
+    </div>
+    <img src="img/mountains_tranquil.webp" alt="Mountains and water">
+  </header>
+
+  <main id="main">
+
+    <div class="affirmations">
+        <span class="date"> Today's Date</span>
+        <span class="affirmation">
+        Good things are coming my way.
+        </span>
+    </div>
+
+      <section>
+      <div class="mood-tracker">
+        <h2>How Are You Feeling Today?</h2>
+        <form action="https://formspree.io/f/xgvezdoo" method="POST">
+        <label for="mood-range">Select Your Mood Below</label>
+        <input type="range" id="mood-range" name="mood-range" min="1" max="5" value="3" aria-label="Mood scale">
+
+        <div class="mood-labels">
+          <div class="mood">
+            <span><img src="img/emotion-1.png" alt = "unwell emoticon"> </span>
+            <p>Unwell</p>
+          </div>
+          <div class="mood">
+            <span><img src= "img/emotion-2.png" alt="been better emoticon"></span>
+            <p>Glum</p>
+          </div>
+          <div class="mood">
+            <span><img src="img/emotion-3.png" alt="okay emoiticon"> </span>
+            <p>Okay</p>
+          </div>
+          <div class="mood">
+            <span><img src="img/emotion-4.png" alt="content emoticon"></span>
+            <p>Content</p>
+          </div>
+          <div class="mood">
+            <span><img src="img/emotion-5.png" alt="very happy emoticon"></span>
+            <p>Great</p>
+          </div>
+        </div>
+
+        <button type="submit">Save Mood</button>
+        </form>
+      </div>
+      </section>
+
+    <section>
+    <div class="gratitude">
+        <h2>Daily Gratitude</h2>
+        <form action="https://formspree.io/f/xwpkqyvq" method="POST" >
+            <label for="gratitude-entry">Today, I am grateful for:</label>
+            <textarea id="gratitude-entry" name="gratitude-entry" placeholder="Write something here" rows="5"></textarea>
+            <button type="submit">Save Entry</button>
+        </form>
+    </div>
+</section>
+
+<section>
+  <div class="other-tabs">
+      <p>Navigate to other tabs for more mental health tools!</p>
+      
+      <div>
+          <img src="img/journal-icon.png" alt="Journal icon" class="tab-icon">
+          <div class="tab-summary">
+              <a href="journal.html"> <h3>Journal</h3> </a>
+              <p>Write down your thoughts and reflect on your day to gain clarity and peace of mind.</p>
+          </div>
+      </div>
+      
+      <hr>
+
+      <div>
+          <img src="img/goals-icon.png" alt="Goals icon" class="tab-icon">
+          <div class="tab-summary">
+            <a href="goals.html"><h3>Goals</h3></a>
+              <p>Set and track achievable goals to build positive habits and stay motivated.</p>
+          </div>
+      </div>
+      
+      <hr>
+
+      <div>
+          <img src="img/resources-icon.png" alt="Resources icon" class="tab-icon">
+          <div class="tab-summary">
+              <a href="resources.html"><h3>Resources</h3></a>
+              <p>Explore helpful tools and articles to support your mental health journey.</p>
+          </div>
+      </div>
+  </div>
+</section>
+  </main>
+  
+  <footer>
+    <p>© 2024 Mental Health Tracker</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Goal Tracker - Mental Health Tracker</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/reset.css">
+</head>
+<body class="goals-page">
+  <a href="#main">Skip to Main Content</a>
+  <div class="banner">
+    <nav>
+      <ul>
+        <li class="nav-logo">
+          <img src="img/logo.png" alt="Mental Health Tracker logo">
+        </li>
+        <li>
+          <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+        </li>
+        <li class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="journal.html">Journal</a>
+          <a href="goals.html">Goal Setting</a>
+          <a href="resources.html">Useful Resources</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <header class="pages-header">
+    <h1><img src="img/goals-icon.png" alt=""> Goal Tracker</h1>
+  </header>
+
+  <main id="main">
+    <section class="goal-tracker">
+      <h2>Set Your Goals</h2>
+      <form id="goal-form" action="https://formspree.io/f/xqakdvwv" method="POST">
+        <div>
+          <label for="goal-input">Enter your goal:</label>
+          <input type="text" name="goal-input" id="goal-input" placeholder="E.g., Practice mindfulness daily" required>
+        </div>
+        <div>
+          <label for="goal-date">Date to complete by:</label>
+          <input type="date" name="goal-date" id="goal-date" required>
+        </div>
+        <button id="goals-submit" type="submit">Add Goal</button>
+      </form>
+
+      <h3> Goals List</h3>
+      <p> Goals will populate here:</p>
+      <ol id="goal-list">
+        <!-- Goals will be dynamically added here -->
+      </ol>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 Mental Health Tracker</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="js/goals.js"></script>
+</body>
+</html>

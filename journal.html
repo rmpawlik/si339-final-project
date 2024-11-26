@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Journal - Mental Health Tracker</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/reset.css">
+</head>
+<body>
+  <a href="#main">Skip to Main Content</a>
+  
+  <div class="banner">
+    <nav>
+      <ul>
+        <div class="nav-logo">
+          <li><img src="img/logo.png" alt="Mental Health Tracker logo"></li>
+        </div>
+        <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+        <div class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="journal.html">Journal</a></li>
+          <li><a href="goals.html">Goal Setting</a></li>
+          <li><a href="resources.html">Useful Resources</a></li>
+        </div>
+      </ul>
+    </nav>
+  </div>
+
+  <header class="pages-header">
+      <h1><img src="img/journal-icon.png" alt=""> Journaling</h1>
+      <p>Write down your thoughts and feelings to gain clarity and peace of mind.</p>
+  </header>
+
+  <main>
+    <section id="main">
+      <div class="journal">
+        <h2>Today's Journal</h2>
+        <form action="https://formspree.io/f/xzzbvnya" method="POST">
+          <label for="journal-entry">What's on your mind today?</label>
+          <textarea id="journal-entry" name="journal-entry" placeholder="Write your thoughts here..." rows="10"></textarea>
+          <button type="submit">Save Journal Entry</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 Mental Health Tracker</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
