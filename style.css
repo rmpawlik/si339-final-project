@@ -1,0 +1,1047 @@
+/* Reset and Typography */
+body {
+    font-family: "roboto, sans-serif"; /* Default font */
+    background-color: #F4F4F4; /* Light gray background */
+    color: #333; /* Dark text color */
+  }
+  
+
+h2 { 
+    font-size: 1.5rem; /* Larger font for section titles */
+    color: #495057; /* Dark gray text color */
+    margin-bottom: 0.5rem; /* Space below the title */
+    font-family: 'Georgia', 'Times New Roman', Times, serif; /* Serif font */
+  }
+  a {
+    color: #6C757D; /* Dark gray link color */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  a:hover {
+    text-decoration: underline; /* Add underline on hover */
+  }
+
+  section {
+        margin-bottom: 40px;/* Space between sections */
+        padding: 20px; /* Space inside sections before text */
+        background-color: #fff; /* White background for sections */
+        border-radius: 8px; /* Rounded corners for sections */
+  }
+  
+  /* Skip Link */
+  a[href="#main"] {
+    position: absolute; /* Position the link */
+    top: -100px; /* Hide the link above the viewport */
+    left: 0; /* Align to the left */
+    background: #FFF; 
+    color: #333; /* Dark text color */
+    padding: 10px; /* Padding around the text */
+    border-radius: 5px; /* Rounded corners */
+    transition: top 0.3s; /* Smooth transition for animation */
+    z-index: 1000; /* Ensure it appears above other elements */
+  }
+  
+  a[href="#main"]:focus {
+    top: 10px; /* Show the link when focused */
+  }
+  
+  /* Banner and Navigation */
+nav ul {
+  display: flex; /* Display the list horizontally */
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Space between logo and toggle */
+  padding: 10px; /* Padding inside the nav */
+  margin: 0; /* Remove default margin */
+  list-style: none; /* Remove bullets */
+  border-bottom: 2px solid #C0C0C0;  /* Add a border at the bottom */
+}
+
+/* Dropdown Menu Styling */
+.nav-links {
+  display: none; /* Hidden by default */
+  flex-direction: column; /* Stack links vertically */
+  gap: 10px; /* Space between links */
+  background: #fff; 
+  border: 2px solid #E0E0E0; /* Border for better separation */
+  border-radius: 8px; /* Rounded corners */
+  padding: 15px; /* Spacing inside */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  position: absolute; /* Position the dropdown */
+  top: 60px; /* Position below the nav bar */
+  right: 10px; /* Align to the right */
+  z-index: 100; /* Ensure it appears above other elements */
+  opacity: 0; /* Start hidden */
+  transform: translateY(-10px); /* Slide-in effect */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth open/close */
+}
+
+/* Show dropdown menu when open */
+.nav-links.open {
+  display: flex; /* Show the links */
+  opacity: 1; /* Visible */
+  transform: translateY(0); /* Reset transform */
+}
+
+/* Dropdown Link Styling */
+.nav-links a {
+  color: #333; /* Dark text color */
+  padding: 8px 12px; /* Padding for clickable area */
+  border-radius: 5px; /* Rounded corners */
+  text-align: left;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+}
+
+.nav-links a:hover {
+  background-color: #5C9EAD; /* Light blue background */
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Soft text shadow */
+}
+.nav-links a:focus {
+  background-color: #5C9EAD; /* Light blue background */
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Soft text shadow */
+}
+
+/* Menu Toggle Button */
+.menu-toggle {
+  display: block; /* Show the toggle button */
+  background: none; /* Transparent background */
+  border: none; /* Remove button border */
+  font-size: 1.5rem; /* Larger font size */
+  cursor: pointer;
+  color: #333; /* Text color for the icon */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.nav-logo img{
+  width: 100px; /* Adjust the logo size */
+}
+
+  .banner {
+    position: -webkit-sticky; /* Safari support */
+    position: sticky;
+    top: 0; /* Makes the nav stick to the top of the viewport */
+    z-index: 10; /* Ensures the banner stays above other content */
+    background-color: white; 
+}
+  /* Header */
+  #greeting {
+  font-size: 1.4rem; /* Larger font for the greeting */
+  color: #41737e;
+  font-weight: bold;
+}
+  header {
+    display: flex; /* Flexbox layout */
+    flex-direction: column;  /* Stack items vertically */
+    text-align: left; /* Align text to the left */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Box shadow */
+    padding: 15px; /* Padding inside the header */
+    margin-bottom: 20px; /* Space below the header */
+  }
+  
+  header .text {
+    margin-bottom: 15px; /* Space below the text */
+  }
+  
+  header h1 {
+    font-size: 2rem; /* Larger font for the title */
+    font-family:'Georgia', 'Times New Roman', Times, serif;
+    color: #495057; /* Dark gray text color */
+    font-weight: bold;
+    margin-bottom: 0.5rem; /* Space below the title */
+    margin-top: 0.5rem; /* Space above the title */
+  }
+  
+  header p {
+    font-size: 1.2rem; /* Larger font for the description */
+    margin-bottom: 10px;
+  }
+  
+  header>img {
+    width: 100%; /* Full width image */
+    border-radius: 10px; /* Rounded corners */
+    max-height: 175px;
+    border: #E0E0E0 10px solid;
+
+  }
+
+  /* Main Content */
+  .affirmations {
+    padding: 30px; /* Space inside the section */
+    border-radius: 12px; /* More rounded corners for a softer look */
+    animation: fadeIn 1s ease-in; /* Smooth fade-in effect */
+    margin-bottom: 20px; /* Space between sections */
+    background: linear-gradient(to bottom, #FFFFFF, #ccebf1); /* Gradient background */
+  }
+
+  .affirmations .date, .affirmations .affirmation {
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    text-align: center; /* Center the text for balance */
+    display: block; /* Display the date and affirmation on the same line */
+    letter-spacing: 0.6px; /* Slightly spaced letters for modern style */
+  }
+
+    .affirmations .date {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #495057;
+
+    }
+    .affirmations .affirmation {
+        font-style: italic;
+        font-size:1.5rem;
+    }
+
+  @keyframes fadeIn { /* Keyframes for fade-in effect */
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  /* mood tracker css */
+  .mood-tracker {
+    text-align: center; /* Center the content */
+  }
+  
+  .mood-tracker h2 {
+    text-align: left; /* Align the title to the left */
+  }
+  
+  label {
+    display: block; /* Display labels as block elements */
+    margin-bottom: 10px; /* Space below each label */
+    color: #444;
+    text-align: left; /* Align the text to the left */
+    font-size: 1.2rem;
+  }
+  
+  input[type="range"] {
+    width: 100%; /* Full width for the range input */
+  
+  }
+
+  .mood-labels {
+    display: flex; /* Display the labels in a row */
+    justify-content: space-between; /* Space between labels */
+    margin: 15px 0; /* Space above and below the labels */
+  }
+  
+  .mood-labels span {
+    font-size: 1.5rem; /* Larger font for the labels */
+  }
+  
+  .mood-labels {
+    position: relative; /* Position the labels relative to the slider */
+    top: -10px; /* Adjust the positioning relative to the slider */
+    font-size: 1rem;
+}
+  
+  textarea {
+    width: 100%; /* Full width for the textarea */
+    padding: 10px; /* Padding inside the textarea */
+    margin-top: 5px;
+    border: 1px solid #CCC; /* Light gray border */
+    border-radius: 5px;
+    font-size: 1em; /* Font size for the textarea */
+    resize: vertical; /* Allow vertical resizing */
+  }
+  
+  .mood-tracker button, .gratitude button, .journal button {
+    background-color: #205c6a;
+    color: white;
+    border: none; /* Remove button border */
+    padding: 10px 15px; /* Padding inside the button */
+    cursor: pointer; /* Cursor style on hover */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1em;
+    margin-top: 10px; /* Space above the button */
+    display:block; /* Full width button */
+    margin-left: 0; 
+    transition: transform 0.2s ease, background-color 0.3s ease; /* Smooth hover effect */
+  }
+
+  .mood-tracker button:hover, .gratitude button:hover, .journal button:hover {
+      background-color: #4A8E9C;
+      transform: scale(1.05); /* Slightly larger on hover */
+  }
+
+  .mood-tracker button:focus, .gratitude button:focus, .journal button:focus {
+    background-color: #4A8E9C;
+    transform: scale(1.05); /* Slightly larger on focus */
+}
+  .mood img {
+    width:25px; /* Adjust the size of the mood icons */
+  }
+  
+  /* Other Tabs Section */
+.other-tabs {
+  margin: 10px; /* Space around the section */
+  padding: 10px; /* Space inside the section */
+  background-color: #F8F9FA;
+  border-radius: 8px;
+}
+
+.other-tabs>p {
+  border-bottom: 3px solid  #41737e; /* Darker border for the title */
+  padding: 20px; /* Space around the title */
+  margin-bottom: 40px; /* Space below the title */
+}
+
+.other-tabs p {
+  font-size: 2.2rem; /* Larger font for the title */
+  color: #495057;
+  text-align: center; /* Center the text */
+}
+
+
+.other-tabs div {
+  display: flex; /* Display the items in a row */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+  gap: 10px;
+}
+
+.other-tabs hr {
+  border: 0;
+  height: 1px;
+  background: #DADADA;
+  margin: 15px 0;
+}
+
+.tab-icon {
+  width: 50px; /* Adjust the size of the icon */
+  height: 50px; /* Adjust the size of the icon */
+  transition: transform 0.3s ease, filter 0.3s ease; /* Smooth hover effect */
+}
+
+.tab-icon:hover {
+  transform: scale(1.2); /* Slightly larger on hover */
+  filter: drop-shadow(0 0 5px #5C9EAD); /* Slightly larger on hover */
+}
+
+.tab-icon:focus {
+  transform: scale(1.2); /* Slightly larger on focus */
+  filter: drop-shadow(0 0 5px #5C9EAD); /* Slightly larger on focus */
+}
+
+.tab-summary h3 {
+  font-size: 1.5rem; /* Larger font for the title */
+  margin: 10px 0; /* Space around the title */
+  color: #343A40;
+}
+
+.tab-summary p {
+  font-size: 1.3rem; /* Larger font for the summary */
+  color: rgb(40, 39, 39); /* Dark text color */
+  align-items: center; /* Vertically center items */
+}
+
+.tab-summary h3, .tab-summary p {
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.tab-summary h3:hover, .tab-summary p:hover {
+  color: #5C9EAD; /* Highlight color on hover */
+}
+.tab-summary h3:focus, .tab-summary p:focus {
+  color: #5C9EAD; /* Highlight color on focus */
+}
+
+/* Non-Home Page Styling*/
+.resources {
+  padding: 20px; /* Space inside the section */
+  display: flex; /* Display items in a row */
+  align-items: center; /* Center items vertically */
+  gap: 15px;
+  flex-direction: column; /* Stack items vertically */
+
+}
+.resources img {
+  width: 300px; /* Adjust the size of the image */
+  align-self: center; /* Center the image */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.pages-header h1 img {
+  vertical-align: middle; /* Align the icon with the text */
+  width: 3rem; /* Adjust the size of the icon */
+  height: 3.2rem; /* Adjust the size of the icon */
+  margin-right: 5px;
+}
+
+.pages-header h1{
+  display: flex; /* Align items in a row */
+  font-size: 2rem; /* Larger font for the title */
+  align-items: center; /* Vertically centers items */
+  gap: 10px; /* Adds space between the icon and text */
+}
+
+.pages-header {
+  background: linear-gradient(to right, #e8f6f9, #f4f4f4); /* Gradient background */
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  margin-bottom: 15px; /* Space below the header */
+}
+
+/* Additional Resources Page Styles*/
+
+body.resources-page main section {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover effect */
+}
+
+.resources-page main section:hover { 
+  transform: translateY(-5px);  /* Lift the section on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Slightly elevated shadow */
+}
+
+/* Section Headers */
+.resources-page main section h2 {
+  margin-bottom: 10px; 
+  border-bottom: 2px solid #7bbac8;;
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+/* Paragraphs */
+.resources-page main section p {
+  font-size: 1rem; /* Font size for paragraphs */
+  line-height: 1.6; /* Spacing between lines */
+  color: #555;
+}
+
+/* Lists */
+.resources-page main section ul {
+  padding-left: 20px; /* Indent the list */
+  margin: 15px 0; /* Space above and below the list */
+  list-style: disc; /* Use disc bullets */
+}
+
+.resources-page main section ul li {
+  margin: 10px 0; /* Space between list items */
+}
+
+/* Links */
+.resources-page main section a {
+  color: #41737e;
+  font-weight: bold; /* Bold text for emphasis */
+  text-decoration: none; /* Remove underline */
+  border-bottom: 2px solid transparent; /* Add a transparent border */
+  transition: color 0.3s, border-bottom-color 0.3s; /* Smooth hover effect */
+}
+
+.resources-page main section a:hover {
+  color: #41737e;
+  border-bottom-color: #41737e; /* Highlight the link with a border */
+}
+
+/* Crisis Hotlines Section Styling */
+.resources-page main section ul li strong {
+  color: #41737e; /* Highlight important information in red */
+  font-weight: bold;
+}
+
+/* Table of Contents */
+.toc {
+  background-color: #f9f9f9; /* Light background for contrast */
+  margin-bottom: 20px; /* Space below the table of contents */
+  padding: 20px;
+ 
+}
+
+.toc h2 {
+  font-size: 1.2rem; /* Larger font for the title */
+  color: #333; /* Dark text for contrast */
+  font-weight: 600; /* Bold the title for emphasis */
+}
+
+.toc ul {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+  display: flex; /* Display items in a row */
+  flex-direction: column; /* Stack items vertically */
+  align-items: flex-start; /* Align items to the left */
+  padding-bottom: 10px; /* Space below the list */
+  text-align: left;
+}
+
+.toc ul li a {
+  text-decoration: none; /* Remove underline */
+  padding: 10px; /* Padding for better clickable area */
+  border-radius: 5px; /* Rounded corners for links */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.toc ul li a:hover,
+.toc ul li a:focus {
+  background-color: #e3f2fd; /* Light blue background on hover */
+  color: #0056b3; /* Darker blue on hover */
+  font-weight: 500; /* Slightly bolden on hover */
+}
+
+.toc ul li a.active {
+  background-color: #cce7ff; /* Highlight the active link with soft blue */
+  color: #004ba0; /* Darker text color for active state */
+  font-weight: bold; /* Bold the active link */
+}
+
+/* Goal Page Styling */
+
+#goal-form label {
+  margin-bottom: 5px;
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+.goal-tracker p {
+  color: #444444;
+}
+
+#goal-form label:first-child {
+  margin-top: 5px; /* Space above the first label */
+}
+/* Goal List Styling */
+#goal-list {
+  margin-top: 15px;
+  list-style: none; /* No bullets for the list */
+  padding: 0; /* Remove default padding */
+}
+
+/* Individual Goal Item */
+.goal-item {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  gap: 5px; /* Space between goal text and date */
+  background: #ffffff; /* White background for contrast */
+  border: 1px solid #e0e0e0; /* Subtle border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 12px;
+  margin-bottom: 12px; /* Space between goal items */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.goal-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Slightly elevated shadow on hover */
+}
+
+.goal-text {
+  font-size: 1rem; /* Readable size for goal text */
+  display: inline-block;
+  color: #495057; /* Neutral gray color */
+  font-weight: bold;
+  word-wrap: break-word; /* Ensure long text wraps */
+}
+
+.goal-date {
+  font-size: 0.9rem;
+  font-style: italic; /* Subtle differentiation */
+}
+
+.goal-item {
+  list-style-type: none; /* Remove bullets for each goal */
+}
+
+/* Section Header */
+.goal-tracker h3 {
+  font-size: 1.3rem;
+  color: #495057;
+  margin-bottom: 0px;
+  margin-top: 30px;
+  text-align: left;
+}
+
+.goal-tracker h2 {
+  margin-bottom: 0px;
+}
+/* Spacing Above the Goals Section */
+.goal-tracker {
+  margin-top: 10px; /* Space above the section */
+  padding: 20px; /* Padding around the section */
+  border-radius: 10px; /* Rounded section corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+
+/* Button Styling */
+#goals-submit {
+  background-color: #205c6a;
+  color: white;
+  border: black solid 1px;
+  padding: 5px 7px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display:block;
+  margin-left: 0;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+.remove-btn {
+  background-color: #96cdd9;
+  color: black;
+  border: black solid 1px;
+  font-weight: bold;
+  padding: 5px 7px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display:block;
+  margin-left: 0;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+
+}
+
+.remove-btn:hover {
+  background-color: #c5e7ee;
+  transform: scale(1.05);
+}
+.remove-btn:focus {
+  background-color: #c5e7ee;
+  transform: scale(1.05);
+}
+#goals-submit:hover {
+    background-color: #4A8E9C;
+    transform: scale(1.05);
+}
+
+#goals-submit:focus{
+  background-color: #4A8E9C;
+  transform: scale(1.05);
+}
+
+#goal-input {
+  width: 300px;
+}
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: #FFF;
+    font-size: 0.9em;
+  }
+
+    /* Responsive header layout for larger screens */
+  @media (min-width: 768px) {
+        /* Adjust header layout */
+  header {
+      flex-direction: row; /* Align items in a row */
+      justify-content: space-between; /* Space between items */
+      align-items: center; /* Center items vertically */
+      padding: 40px 30px;
+  }
+  header h1 {
+    font-size: 3rem; /* Larger font for the title */
+  }
+
+  header p {
+    font-size: 1.5rem; /* Larger font for the description */
+  }
+  h2 {
+    font-size: 2rem; /* Larger font for section titles */
+  }
+  label, .mood-labels {
+    font-size: 1.5rem; /* Larger font for labels */
+  }
+#greeting {
+  font-size: 2rem; /* Larger font for the greeting */
+}
+  .mood-tracker button, .gratitude button, .journal button {
+    font-size: 1.2rem;
+  }
+  header > img {
+      max-height: 250px; /* Adjust the image size */
+      width: auto;
+      margin-left: 20px; /* Space between the image and text */
+  }
+
+  /* Adjust main layout */
+  main {
+      padding: 30px;
+  }
+
+  .affirmations {
+    padding: 40px;
+  }
+  .affirmations .date, 
+  .affirmations .affirmation {
+      font-size: 1.7rem;
+  }
+
+.mood-tracker {
+  padding: 20px 30px;
+}
+  /* Gratitude Section */
+  .gratitude {
+      padding: 30px;
+  }
+
+  textarea {
+      font-size: 1.2rem;
+  }
+
+  /* Other Tabs Section */
+  .other-tabs {
+      padding: 30px;
+  }
+
+  .tab-icon {
+      width: 60px;
+      height: 60px;
+  }
+
+  .tab-summary h3 {
+      font-size: 1.8rem;
+      justify-self:flex-start;
+      margin-top: 30px;
+  }
+
+  .tab-summary p {
+      font-size: 1.5rem;
+      text-align: right;
+  }
+
+
+    .nav-links {
+      display: flex; /* Show the links in a horizontal layout */
+      flex-direction: row;
+      gap: 20px; /* Space between links */
+      background: none; /* Remove the dropdown background styling */
+      border: none; /* Remove border for a cleaner look */
+      padding: 0; /* Remove extra padding */
+      position: static; /* Reset position */
+      box-shadow: none; /* Remove shadow */
+      opacity: 1; /* Ensure visibility */
+      transform: none; /* Reset transform */
+    }
+  
+    .menu-toggle {
+      display: none; /* Hide the toggle button */
+    }
+  
+    nav ul {
+      justify-content: space-between; /* Ensure proper alignment of nav elements */
+      align-items: center;
+    }
+
+  .nav-logo {
+      flex: 1; /* Keep logo to the left */
+  }
+
+  .other-tabs div {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap:30px;
+  }
+
+.tab-icon {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+}
+
+.tab-summary {
+    flex: 1;
+}
+
+.other-tabs hr {
+    margin: 20px 0;
+}
+.toc {
+  border-radius: 10px;
+}
+.toc ul {
+  flex-direction: row;
+    }
+  
+  .resources {
+    flex-direction: row;
+    gap: 40px;
+  }
+.resources img {
+  width: 350px;
+}
+.resources-page main section h2 {
+  text-align: left; 
+}
+
+#goal-form label, #goal-form input {
+  display: inline-block;
+}
+
+.goal-tracker {
+  margin-top: 20px; /* Increased spacing for larger screens */
+  padding: 25px;
+}
+
+#goal-list {
+  padding-left: 30px; /* More space for bullets */
+}
+
+.goal-item {
+  display: grid;
+  grid-template-columns: 1fr auto auto; /* Flexible text + date + button */
+  align-items: center; /* Vertically center content */
+  gap: 15px; /* Space between items */
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.goal-text {
+  font-size: 1.2rem; /* Larger text size */
+}
+
+.goal-date {
+  font-size: 1rem; /* Increase date text size */
+}
+#goals-submit {
+  padding: 10px 12px; /* Larger padding for the button */
+}
+
+.remove-btn {
+  padding: 8px 10px;  /* Larger padding for the button */
+  width: 150px; /* Adjust the width of the button */
+}
+
+.goal-tracker h3 {
+  margin-top: 50px; /* Increased space above the title */
+  font-size: 1.5rem; /* Larger font size for the title */
+}}
+
+
+   @media (min-width: 1024px) {
+
+  nav {
+    font-size: 1.2rem; /* Larger font for the nav */
+  }
+  .nav-logo img {
+    width: 125px; /* Adjust the logo size */
+  }
+
+  header {
+      padding: 50px; /* Space inside the header */
+  }
+
+  header> img {
+      max-height: 300px; /* Adjust the image size */
+      width: 40%; /* Adjust the image size */
+      margin-left: 50px; /* Space between the image and text */
+  }
+
+  .text {
+      font-size: 1.5rem; /* Larger font for the text */
+  }
+
+  /* Gratitude Section */
+  .gratitude, .mood-tracker, .journal {
+      padding: 30px;
+  }
+
+  textarea {
+      font-size: 1.2rem; /* Larger font for the textarea */
+      padding: 15px;
+  }
+
+
+  .tab-icon {
+      width: 80px; /* Adjust the size of the icon */
+      height: 80px; /* Adjust the size of the icon */
+  }
+
+  .tab-summary h3 {
+      font-size: 2rem; /* Larger font for the title */
+  }
+
+  .tab-summary p {
+      font-size: 1.6rem; /* Larger font for the summary */
+  }
+
+  .other-tabs hr {
+      margin: 30px 0; /* Space above and below the hr */
+  }
+
+.pages-header {
+    padding: 40px; /* Space inside the header */
+  }
+    }
+
+    
+    @media (prefers-reduced-motion: reduce) {
+      /* Remove animations and transitions */
+      *, *::before, *::after {
+        animation: none;
+        transition: none;
+      }
+    
+      /* Skip Link */
+      a[href="#main"] {
+        top: 0; /* Disable animation */
+      }
+    
+      /* Dropdown Menu */
+      .nav-links {
+        transform: none; /* Disable slide-in effect */
+        opacity: 1; /* Always visible when open */
+      }
+    
+      /* Affirmations Section */
+      .affirmations {
+        animation: none; /* Disable fade-in */
+      }
+    
+      /* Interactive Elements */
+      .menu-toggle,
+      .mood-tracker button,
+      .gratitude button,
+      .journal button,
+      .tab-icon {
+        transform: none; /* Remove scale effects */
+      }
+    
+      /* Dropdown and Tab Highlights */
+      .nav-links a:hover,
+      .nav-links a:focus,
+      .tab-icon:hover,
+      .tab-icon:focus,
+      .tab-summary h3:hover,
+      .tab-summary p:hover {
+        filter: none; /* Remove hover effects */
+      }
+    
+      /* Buttons */
+      .remove-btn:hover,
+      .remove-btn:focus,
+      #goals-submit:hover,
+      #goals-submit:focus {
+        transform: none; /* Disable scaling effects */
+      }
+    
+      /* Resources Page Sections */
+      .resources-page main section:hover {
+        transform: none; /* Disable hover lift */
+      }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      /* General Background and Text Colors */
+      body {
+        background-color: #121212; /* Very dark background */
+        color: #f5f5f5; /* Lighter text for better contrast */
+      }
+    
+      a, a:visited {
+        color: #2a59a0; /* Soft blue links */
+      }
+
+      .affirmation {
+        color: black;
+      }
+    
+      /* Skip Link */
+      a[href="#main"] {
+        background-color: #1a1a1a; /* Darker background */
+        color: #ffffff; /* White text */
+      }
+    
+      /* Navigation Menu */
+      nav {
+        background-color: #1c1c1c; /* Darker nav bar */
+        border-color: #2a2a2a; /* Subtle border */
+      }
+    
+      .nav-links a {
+        color: #f5f5f5; /* Lighter text for nav links */
+      }
+    
+      header h1, h2, h3, p, section, img, label, .goal-tracker h3, .goal-tracker p {
+        color: white;
+      }
+   .pages-header h1, .pages-header p {
+    color: darkslategray;
+   }
+   .resources-page main section p {
+    color: white;
+   }
+      .nav-links a:hover,
+      .nav-links a:focus {
+        color: #80b3ff; /* Highlight color on hover/focus */
+      }
+    .resources-page main section ul li strong, .resources-page main section a{
+      color: rgb(187, 245, 239)
+    }
+      /* Sections */
+      section {
+        background-color: #3d3b3b; /* Darker section background */
+        color: white; /* Lighter text */
+        border-color: #f9f5f5; /* Subtle border for contrast */
+      }
+    
+      section:hover {
+        background-color: #2a2a2a; /* Slightly lighter on hover */
+      }
+    
+      /* Affirmations Section */
+      .affirmations {
+        background-color: #1a1a1a; /* Darker card background */
+        color: #f5f5f5; /* Lighter text */
+      }
+    
+      /* Buttons and Interactive Elements */
+      button,
+      .remove-btn,
+      #goals-submit {
+        background-color: #333; /* Darker button background */
+        color: #f5f5f5; /* Lighter button text */
+        border-color: #444; /* Adjusted border for better contrast */
+      }
+    
+      button:hover,
+      .remove-btn:hover,
+      #goals-submit:hover {
+        background-color: #444; /* Slightly lighter on hover */
+        color: #ffffff; /* Pure white text on hover */
+      }
+    
+      /* Tab Components */
+      .tab-icon {
+        color: #f5f5f5; /* Lighter text */
+      }
+    
+      .tab-icon:hover,
+      .tab-icon:focus {
+        background-color: #2a2a2a; /* Slightly lighter on hover/focus */
+        color: #80b3ff; /* Highlighted text */
+      }
+    
+      /* Resources Page */
+      .resources-page main {
+        background-color: #121212; /* Match body background */
+        color: #f5f5f5; /* Lighter text */
+      }
+    
+      .resources-page main section {
+        background-color: #1a1a1a; /* Darker section background */
+        border-color: #2a2a2a; /* Subtle border */
+        color: #f5f5f5; /* Lighter text */
+      }
+    
+      .resources-page main section:hover {
+        background-color: #2a2a2a; /* Slight hover effect */
+      }
+
+      img {
+        background-color: white;
+      }
+    }
