@@ -1,24 +1,24 @@
 /* Reset and Typography */
 body {
-    font-family: "roboto, sans-serif";
-    background-color: #F4F4F4;
-    color: #333;
+    font-family: "roboto, sans-serif"; /* Default font */
+    background-color: #F4F4F4; /* Light gray background */
+    color: #333; /* Dark text color */
   }
   
 
-h2 {
-    font-size: 1.5rem;
-    color: #495057;
-    margin-bottom: 0.5rem;
-    font-family: 'Georgia', 'Times New Roman', Times, serif;
+h2 { 
+    font-size: 1.5rem; /* Larger font for section titles */
+    color: #495057; /* Dark gray text color */
+    margin-bottom: 0.5rem; /* Space below the title */
+    font-family: 'Georgia', 'Times New Roman', Times, serif; /* Serif font */
   }
   a {
-    color: #6C757D;
-    text-decoration: none;
+    color: #6C757D; /* Dark gray link color */
+    text-decoration: none; /* Remove underline */
   }
   
   a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Add underline on hover */
   }
 
   section {
@@ -30,38 +30,38 @@ h2 {
   
   /* Skip Link */
   a[href="#main"] {
-    position: absolute;
-    top: -100px;
-    left: 0;
-    background: #FFF;
-    color: #333;
-    padding: 10px;
-    border-radius: 5px;
-    transition: top 0.3s;
-    z-index: 1000;
+    position: absolute; /* Position the link */
+    top: -100px; /* Hide the link above the viewport */
+    left: 0; /* Align to the left */
+    background: #FFF; 
+    color: #333; /* Dark text color */
+    padding: 10px; /* Padding around the text */
+    border-radius: 5px; /* Rounded corners */
+    transition: top 0.3s; /* Smooth transition for animation */
+    z-index: 1000; /* Ensure it appears above other elements */
   }
   
   a[href="#main"]:focus {
-    top: 10px;
+    top: 10px; /* Show the link when focused */
   }
   
   /* Banner and Navigation */
 nav ul {
-  display: flex;
+  display: flex; /* Display the list horizontally */
   align-items: center; /* Center items vertically */
   justify-content: space-between; /* Space between logo and toggle */
-  padding: 10px;
-  margin: 0;
+  padding: 10px; /* Padding inside the nav */
+  margin: 0; /* Remove default margin */
   list-style: none; /* Remove bullets */
-  border-bottom: 2px solid #C0C0C0;
+  border-bottom: 2px solid #C0C0C0;  /* Add a border at the bottom */
 }
 
 /* Dropdown Menu Styling */
 .nav-links {
   display: none; /* Hidden by default */
-  flex-direction: column;
-  gap: 10px;
-  background: #fff; /* Background color */
+  flex-direction: column; /* Stack links vertically */
+  gap: 10px; /* Space between links */
+  background: #fff; 
   border: 2px solid #E0E0E0; /* Border for better separation */
   border-radius: 8px; /* Rounded corners */
   padding: 15px; /* Spacing inside */
@@ -77,14 +77,14 @@ nav ul {
 
 /* Show dropdown menu when open */
 .nav-links.open {
-  display: flex;
-  opacity: 1;
+  display: flex; /* Show the links */
+  opacity: 1; /* Visible */
   transform: translateY(0); /* Reset transform */
 }
 
 /* Dropdown Link Styling */
 .nav-links a {
-  color: #333;
+  color: #333; /* Dark text color */
   padding: 8px 12px; /* Padding for clickable area */
   border-radius: 5px; /* Rounded corners */
   text-align: left;
@@ -92,29 +92,29 @@ nav ul {
 }
 
 .nav-links a:hover {
-  background-color: #5C9EAD;
+  background-color: #5C9EAD; /* Light blue background */
   color: white;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Soft text shadow */
 }
 .nav-links a:focus {
-  background-color: #5C9EAD;
+  background-color: #5C9EAD; /* Light blue background */
   color: white;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Soft text shadow */
 }
 
 /* Menu Toggle Button */
 .menu-toggle {
-  display: block;
-  background: none;
-  border: none;
-  font-size: 1.5rem;
+  display: block; /* Show the toggle button */
+  background: none; /* Transparent background */
+  border: none; /* Remove button border */
+  font-size: 1.5rem; /* Larger font size */
   cursor: pointer;
   color: #333; /* Text color for the icon */
   transition: color 0.3s ease; /* Smooth color transition */
 }
 
 .nav-logo img{
-  width: 100px;
+  width: 100px; /* Adjust the logo size */
 }
 
   .banner {
@@ -122,44 +122,44 @@ nav ul {
     position: sticky;
     top: 0; /* Makes the nav stick to the top of the viewport */
     z-index: 10; /* Ensures the banner stays above other content */
-    background-color: white;
+    background-color: white; 
 }
   /* Header */
   #greeting {
-  font-size: 1.4rem;
+  font-size: 1.4rem; /* Larger font for the greeting */
   color: #41737e;
   font-weight: bold;
 }
   header {
-    display: flex;
-    flex-direction: column; 
-    text-align: left;
+    display: flex; /* Flexbox layout */
+    flex-direction: column;  /* Stack items vertically */
+    text-align: left; /* Align text to the left */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Box shadow */
-    padding: 15px;
-    margin-bottom: 20px;
+    padding: 15px; /* Padding inside the header */
+    margin-bottom: 20px; /* Space below the header */
   }
   
   header .text {
-    margin-bottom: 15px;
+    margin-bottom: 15px; /* Space below the text */
   }
   
   header h1 {
-    font-size: 2rem;
+    font-size: 2rem; /* Larger font for the title */
     font-family:'Georgia', 'Times New Roman', Times, serif;
-    color: #495057;
+    color: #495057; /* Dark gray text color */
     font-weight: bold;
-    margin-bottom: 0.5rem;
-    margin-top: 0.5rem;
+    margin-bottom: 0.5rem; /* Space below the title */
+    margin-top: 0.5rem; /* Space above the title */
   }
   
   header p {
-    font-size: 1.2rem;
+    font-size: 1.2rem; /* Larger font for the description */
     margin-bottom: 10px;
   }
   
   header>img {
-    width: 100%;
-    border-radius: 10px;
+    width: 100%; /* Full width image */
+    border-radius: 10px; /* Rounded corners */
     max-height: 175px;
     border: #E0E0E0 10px solid;
 
@@ -167,11 +167,11 @@ nav ul {
 
   /* Main Content */
   .affirmations {
-    padding: 30px;
+    padding: 30px; /* Space inside the section */
     border-radius: 12px; /* More rounded corners for a softer look */
     animation: fadeIn 1s ease-in; /* Smooth fade-in effect */
     margin-bottom: 20px; /* Space between sections */
-    background: linear-gradient(to bottom, #FFFFFF, #ccebf1);
+    background: linear-gradient(to bottom, #FFFFFF, #ccebf1); /* Gradient background */
   }
 
   .affirmations .date, .affirmations .affirmation {
@@ -192,7 +192,7 @@ nav ul {
         font-size:1.5rem;
     }
 
-  @keyframes fadeIn {
+  @keyframes fadeIn { /* Keyframes for fade-in effect */
     from {
       opacity: 0;
       transform: translateY(10px);
@@ -204,104 +204,103 @@ nav ul {
   }
   /* mood tracker css */
   .mood-tracker {
-    text-align: center;
-    
+    text-align: center; /* Center the content */
   }
   
   .mood-tracker h2 {
-    text-align: left;
+    text-align: left; /* Align the title to the left */
   }
   
   label {
-    display: block;
-    margin-bottom: 10px;
+    display: block; /* Display labels as block elements */
+    margin-bottom: 10px; /* Space below each label */
     color: #444;
-    text-align: left;
+    text-align: left; /* Align the text to the left */
     font-size: 1.2rem;
   }
   
   input[type="range"] {
-    width: 100%;
+    width: 100%; /* Full width for the range input */
   
   }
 
   .mood-labels {
-    display: flex;
-    justify-content: space-between;
-    margin: 15px 0;
+    display: flex; /* Display the labels in a row */
+    justify-content: space-between; /* Space between labels */
+    margin: 15px 0; /* Space above and below the labels */
   }
   
   .mood-labels span {
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* Larger font for the labels */
   }
   
   .mood-labels {
-    position: relative;
+    position: relative; /* Position the labels relative to the slider */
     top: -10px; /* Adjust the positioning relative to the slider */
     font-size: 1rem;
 }
   
   textarea {
-    width: 100%;
-    padding: 10px;
+    width: 100%; /* Full width for the textarea */
+    padding: 10px; /* Padding inside the textarea */
     margin-top: 5px;
-    border: 1px solid #CCC;
+    border: 1px solid #CCC; /* Light gray border */
     border-radius: 5px;
-    font-size: 1em;
-    resize: vertical;
+    font-size: 1em; /* Font size for the textarea */
+    resize: vertical; /* Allow vertical resizing */
   }
   
   .mood-tracker button, .gratitude button, .journal button {
     background-color: #205c6a;
     color: white;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    border-radius: 5px;
+    border: none; /* Remove button border */
+    padding: 10px 15px; /* Padding inside the button */
+    cursor: pointer; /* Cursor style on hover */
+    border-radius: 5px; /* Rounded corners */
     font-size: 1em;
-    margin-top: 10px;
-    display:block;
-    margin-left: 0;
-    transition: transform 0.2s ease, background-color 0.3s ease;
+    margin-top: 10px; /* Space above the button */
+    display:block; /* Full width button */
+    margin-left: 0; 
+    transition: transform 0.2s ease, background-color 0.3s ease; /* Smooth hover effect */
   }
 
   .mood-tracker button:hover, .gratitude button:hover, .journal button:hover {
       background-color: #4A8E9C;
-      transform: scale(1.05);
+      transform: scale(1.05); /* Slightly larger on hover */
   }
 
   .mood-tracker button:focus, .gratitude button:focus, .journal button:focus {
     background-color: #4A8E9C;
-    transform: scale(1.05);
+    transform: scale(1.05); /* Slightly larger on focus */
 }
   .mood img {
-    width:25px;
+    width:25px; /* Adjust the size of the mood icons */
   }
   
   /* Other Tabs Section */
 .other-tabs {
-  margin: 10px;
-  padding: 10px;
+  margin: 10px; /* Space around the section */
+  padding: 10px; /* Space inside the section */
   background-color: #F8F9FA;
   border-radius: 8px;
 }
 
 .other-tabs>p {
-  border-bottom: 3px solid  #41737e;
-  padding: 20px;
-  margin-bottom: 40px;
+  border-bottom: 3px solid  #41737e; /* Darker border for the title */
+  padding: 20px; /* Space around the title */
+  margin-bottom: 40px; /* Space below the title */
 }
 
 .other-tabs p {
-  font-size: 2.2rem;
+  font-size: 2.2rem; /* Larger font for the title */
   color: #495057;
-  text-align: center;
+  text-align: center; /* Center the text */
 }
 
 
 .other-tabs div {
-  display: flex;
-  flex-direction: column;
+  display: flex; /* Display the items in a row */
+  flex-direction: column; /* Stack items vertically */
   align-items: center;
   text-align: center;
   padding: 15px;
@@ -316,94 +315,95 @@ nav ul {
 }
 
 .tab-icon {
-  width: 50px;
-  height: 50px;
-  transition: transform 0.3s ease, filter 0.3s ease;
+  width: 50px; /* Adjust the size of the icon */
+  height: 50px; /* Adjust the size of the icon */
+  transition: transform 0.3s ease, filter 0.3s ease; /* Smooth hover effect */
 }
 
 .tab-icon:hover {
-  transform: scale(1.2);
-  filter: drop-shadow(0 0 5px #5C9EAD);
+  transform: scale(1.2); /* Slightly larger on hover */
+  filter: drop-shadow(0 0 5px #5C9EAD); /* Slightly larger on hover */
 }
 
 .tab-icon:focus {
-  transform: scale(1.2);
-  filter: drop-shadow(0 0 5px #5C9EAD);
+  transform: scale(1.2); /* Slightly larger on focus */
+  filter: drop-shadow(0 0 5px #5C9EAD); /* Slightly larger on focus */
 }
 
 .tab-summary h3 {
-  font-size: 1.5rem;
-  margin: 10px 0;
+  font-size: 1.5rem; /* Larger font for the title */
+  margin: 10px 0; /* Space around the title */
   color: #343A40;
 }
 
 .tab-summary p {
-  font-size: 1.3rem;
-  color: #6C757D;
-  align-items: center;
+  font-size: 1.3rem; /* Larger font for the summary */
+  color: rgb(40, 39, 39); /* Dark text color */
+  align-items: center; /* Vertically center items */
 }
 
 .tab-summary h3, .tab-summary p {
-  transition: color 0.3s ease;
+  transition: color 0.3s ease; /* Smooth color transition */
 }
 
 .tab-summary h3:hover, .tab-summary p:hover {
-  color: #5C9EAD;
+  color: #5C9EAD; /* Highlight color on hover */
 }
 .tab-summary h3:focus, .tab-summary p:focus {
-  color: #5C9EAD;
+  color: #5C9EAD; /* Highlight color on focus */
 }
 
-/* additional resources page */
+/* Non-Home Page Styling*/
 .resources {
-  padding: 20px;
-  display: flex;
-  align-items: center;
+  padding: 20px; /* Space inside the section */
+  display: flex; /* Display items in a row */
+  align-items: center; /* Center items vertically */
   gap: 15px;
-  flex-direction: column;
+  flex-direction: column; /* Stack items vertically */
 
 }
 .resources img {
-  width: 300px;
-  align-self: center;
-  border-radius: 10px;
+  width: 300px; /* Adjust the size of the image */
+  align-self: center; /* Center the image */
+  border-radius: 10px; /* Rounded corners */
 }
 
 .pages-header h1 img {
-  vertical-align: middle;
-  width: 3rem;
-  height: 3.2rem;
+  vertical-align: middle; /* Align the icon with the text */
+  width: 3rem; /* Adjust the size of the icon */
+  height: 3.2rem; /* Adjust the size of the icon */
   margin-right: 5px;
 }
 
 .pages-header h1{
-  display: flex;
-  font-size: 2rem;
+  display: flex; /* Align items in a row */
+  font-size: 2rem; /* Larger font for the title */
   align-items: center; /* Vertically centers items */
   gap: 10px; /* Adds space between the icon and text */
 }
 
 .pages-header {
-  background: linear-gradient(to right, #e8f6f9, #f4f4f4);
+  background: linear-gradient(to right, #e8f6f9, #f4f4f4); /* Gradient background */
   padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  margin-bottom: 15px; /* Space below the header */
 }
 
-/* Resource Section Styling */
+/* Additional Resources Page Styles*/
+
 body.resources-page main section {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover effect */
 }
 
-.resources-page main section:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+.resources-page main section:hover { 
+  transform: translateY(-5px);  /* Lift the section on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Slightly elevated shadow */
 }
 
 /* Section Headers */
 .resources-page main section h2 {
-  margin-bottom: 10px;
+  margin-bottom: 10px; 
   border-bottom: 2px solid #7bbac8;;
   padding-bottom: 5px;
   text-align: center;
@@ -411,34 +411,34 @@ body.resources-page main section {
 
 /* Paragraphs */
 .resources-page main section p {
-  font-size: 1rem;
-  line-height: 1.6;
+  font-size: 1rem; /* Font size for paragraphs */
+  line-height: 1.6; /* Spacing between lines */
   color: #555;
 }
 
 /* Lists */
 .resources-page main section ul {
-  padding-left: 20px;
-  margin: 15px 0;
-  list-style: disc;
+  padding-left: 20px; /* Indent the list */
+  margin: 15px 0; /* Space above and below the list */
+  list-style: disc; /* Use disc bullets */
 }
 
 .resources-page main section ul li {
-  margin: 10px 0;
+  margin: 10px 0; /* Space between list items */
 }
 
 /* Links */
 .resources-page main section a {
   color: #41737e;
-  font-weight: bold;
-  text-decoration: none;
-  border-bottom: 2px solid transparent;
-  transition: color 0.3s, border-bottom-color 0.3s;
+  font-weight: bold; /* Bold text for emphasis */
+  text-decoration: none; /* Remove underline */
+  border-bottom: 2px solid transparent; /* Add a transparent border */
+  transition: color 0.3s, border-bottom-color 0.3s; /* Smooth hover effect */
 }
 
 .resources-page main section a:hover {
   color: #41737e;
-  border-bottom-color: #41737e;
+  border-bottom-color: #41737e; /* Highlight the link with a border */
 }
 
 /* Crisis Hotlines Section Styling */
@@ -448,10 +448,9 @@ body.resources-page main section {
 }
 
 /* Table of Contents */
-
 .toc {
   background-color: #f9f9f9; /* Light background for contrast */
-margin-bottom: 20px;
+  margin-bottom: 20px; /* Space below the table of contents */
   padding: 20px;
  
 }
@@ -466,11 +465,11 @@ margin-bottom: 20px;
   list-style-type: none; /* Remove default list styling */
   padding: 0; /* Remove padding */
   margin: 0; /* Remove margin */
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-padding-bottom: 10px;
-text-align: left;
+  display: flex; /* Display items in a row */
+  flex-direction: column; /* Stack items vertically */
+  align-items: flex-start; /* Align items to the left */
+  padding-bottom: 10px; /* Space below the list */
+  text-align: left;
 }
 
 .toc ul li a {
@@ -487,14 +486,13 @@ text-align: left;
   font-weight: 500; /* Slightly bolden on hover */
 }
 
-/* Add active class for highlighted section */
 .toc ul li a.active {
   background-color: #cce7ff; /* Highlight the active link with soft blue */
   color: #004ba0; /* Darker text color for active state */
   font-weight: bold; /* Bold the active link */
 }
 
-/* Goal List Styling */
+/* Goal Page Styling */
 
 #goal-form label {
   margin-bottom: 5px;
@@ -507,13 +505,13 @@ text-align: left;
 }
 
 #goal-form label:first-child {
-  margin-top: 5px;
+  margin-top: 5px; /* Space above the first label */
 }
 /* Goal List Styling */
 #goal-list {
   margin-top: 15px;
   list-style: none; /* No bullets for the list */
-  padding: 0;
+  padding: 0; /* Remove default padding */
 }
 
 /* Individual Goal Item */
@@ -571,7 +569,6 @@ text-align: left;
 }
 
 /* Button Styling */
-
 #goals-submit {
   background-color: #205c6a;
   color: white;
@@ -633,35 +630,36 @@ text-align: left;
 
     /* Responsive header layout for larger screens */
   @media (min-width: 768px) {
-
         /* Adjust header layout */
   header {
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
+      flex-direction: row; /* Align items in a row */
+      justify-content: space-between; /* Space between items */
+      align-items: center; /* Center items vertically */
       padding: 40px 30px;
   }
   header h1 {
-    font-size: 3rem;
-  }
-  h2 {
-    font-size: 2rem;
-  }
-  label, .mood-labels {
-    font-size: 1.5rem;
+    font-size: 3rem; /* Larger font for the title */
   }
 
+  header p {
+    font-size: 1.5rem; /* Larger font for the description */
+  }
+  h2 {
+    font-size: 2rem; /* Larger font for section titles */
+  }
+  label, .mood-labels {
+    font-size: 1.5rem; /* Larger font for labels */
+  }
+#greeting {
+  font-size: 2rem; /* Larger font for the greeting */
+}
   .mood-tracker button, .gratitude button, .journal button {
     font-size: 1.2rem;
   }
   header > img {
-      max-height: 250px;
+      max-height: 250px; /* Adjust the image size */
       width: auto;
-      margin-left: 20px;
-  }
-
-  .text {
-      max-width: 50%;
+      margin-left: 20px; /* Space between the image and text */
   }
 
   /* Adjust main layout */
@@ -809,42 +807,41 @@ text-align: left;
   font-size: 1rem; /* Increase date text size */
 }
 #goals-submit {
-  padding: 10px 12px;
+  padding: 10px 12px; /* Larger padding for the button */
 }
 
 .remove-btn {
-  padding: 8px 10px; 
-  width: 150px;
+  padding: 8px 10px;  /* Larger padding for the button */
+  width: 150px; /* Adjust the width of the button */
 }
 
 .goal-tracker h3 {
-  margin-top: 50px;
-  font-size: 1.5rem;
+  margin-top: 50px; /* Increased space above the title */
+  font-size: 1.5rem; /* Larger font size for the title */
 }}
 
 
    @media (min-width: 1024px) {
 
   nav {
-    font-size: 1.2rem;
+    font-size: 1.2rem; /* Larger font for the nav */
   }
   .nav-logo img {
-    width: 125px;
+    width: 125px; /* Adjust the logo size */
   }
 
   header {
-      padding: 50px;
+      padding: 50px; /* Space inside the header */
   }
 
   header> img {
-      max-height: 300px;
-      width: 40%;
-      margin-left: 50px;
+      max-height: 300px; /* Adjust the image size */
+      width: 40%; /* Adjust the image size */
+      margin-left: 50px; /* Space between the image and text */
   }
 
   .text {
-      max-width: 50%;
-      font-size: 1.5rem;
+      font-size: 1.5rem; /* Larger font for the text */
   }
 
   /* Gratitude Section */
@@ -853,30 +850,30 @@ text-align: left;
   }
 
   textarea {
-      font-size: 1.2rem;
+      font-size: 1.2rem; /* Larger font for the textarea */
       padding: 15px;
   }
 
 
   .tab-icon {
-      width: 80px;
-      height: 80px;
+      width: 80px; /* Adjust the size of the icon */
+      height: 80px; /* Adjust the size of the icon */
   }
 
   .tab-summary h3 {
-      font-size: 2rem;
+      font-size: 2rem; /* Larger font for the title */
   }
 
   .tab-summary p {
-      font-size: 1.6rem;
+      font-size: 1.6rem; /* Larger font for the summary */
   }
 
   .other-tabs hr {
-      margin: 30px 0;
+      margin: 30px 0; /* Space above and below the hr */
   }
 
 .pages-header {
-    padding: 40px;
+    padding: 40px; /* Space inside the header */
   }
     }
 
